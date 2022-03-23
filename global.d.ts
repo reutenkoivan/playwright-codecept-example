@@ -1,11 +1,13 @@
+import { Utils } from '@playwright-codecept/utils-extension'
+
 declare global {
   namespace codeceptFixtureTypes {
-    type extensions = {}
+    type extensions = {
+      utils: typeof Utils
+    }
 
     interface options {
       codeceptExtensions: extensions
     }
   }
 }
-
-export {}

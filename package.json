@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@playwright-codecept/test-fixture": "^0.0.2",
+    "@playwright-codecept/utils-extension": "^0.0.2",
     "@playwright/test": "^1.20.0",
     "signales": "^2.0.5"
   }

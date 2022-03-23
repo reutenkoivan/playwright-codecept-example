@@ -1,5 +1,9 @@
 {
   "files": [
     "global.d.ts"
+  ],
+  "include": [
+    "__integration-tests__",
+    "playwright.config.ts"
   ]
 }

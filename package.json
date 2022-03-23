@@ -1,0 +1,13 @@
+{
+  "name": "example-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test:int": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright-codecept/test-fixture": "^0.0.2",
+    "@playwright/test": "^1.20.0",
+    "signales": "^2.0.5"
+  }
+}

@@ -2,10 +2,10 @@
 
 For integrating codecept syntax into playwright testing library you need
 
-### 1. Install dependencies "@playwright-codecept/test-fixture" and "@playwright/test"
+### 1. Install dependencies "@pw-codeceptjs/test" and "@playwright/test"
 
 ```shell
-npm i -D @playwright-codecept/test-fixture @playwright/test
+npm i -D @pw-codeceptjs/test @playwright/test
 ```
 
 ### 2. Declare global types
@@ -48,13 +48,13 @@ Example in `<root>/__integration-tests__/basic-example.spec.ts`
 for example, you were chosen **utils-extension**.
 
 ```shell
-npm i -D @playwright-codecept/utils-extension
+npm i -D @pw-codeceptjs/utils-extension
 ```
 
 ### 2. Declare types in `global.d.ts`.
 
 ```typescript
-import { Utils } from '@playwright-codecept/utils-extension'
+import { Utils } from '@pw-codeceptjs/utils-extension'
 
 declare global {
   namespace codeceptFixtureTypes {
@@ -81,7 +81,7 @@ export default config
 
 ```typescript
 import { PlaywrightTestConfig } from '@playwright/test'
-import { Utils } from '@playwright-codecept/utils-extension'
+import { Utils } from '@pw-codeceptjs/utils-extension'
 
 const config: PlaywrightTestConfig<codeceptFixtureTypes.options> = {
   use: {

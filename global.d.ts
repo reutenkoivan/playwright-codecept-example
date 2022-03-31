@@ -1,13 +1,9 @@
-import { Utils } from '@playwright-codecept/utils-extension'
+import { Utils } from '@pw-codeceptjs/utils-extension'
 
 declare global {
-  namespace codeceptFixtureTypes {
+  namespace codeceptjsFixtureTypes {
     type extensions = {
       utils: typeof Utils
-    }
-
-    interface options {
-      codeceptExtensions: extensions
     }
   }
 }

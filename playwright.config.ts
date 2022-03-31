@@ -1,14 +1,17 @@
 import { PlaywrightTestConfig, devices } from '@playwright/test'
-import { Utils } from '@playwright-codecept/utils-extension'
+import { Utils } from '@pw-codeceptjs/utils-extension'
+import type { CodeceptFixtureConfig } from '@pw-codeceptjs/test'
 
-const config: PlaywrightTestConfig<codeceptFixtureTypes.options> = {
+const config: PlaywrightTestConfig<CodeceptFixtureConfig> = {
   forbidOnly: !!process.env.CI,
   testMatch: '**/__integration-tests__/**/*.spec.ts',
   reporter: [['html']],
   use: {
     headless: false,
-    codeceptExtensions: {
-      utils: Utils,
+    codeceptjs: {
+      extensions: {
+        utils: Utils,
+      }
     },
   },
   projects: [

@@ -1,4 +1,4 @@
-import { test } from '@playwright-codecept/test-fixture'
+import { test } from '@pw-codeceptjs/test'
 
 test('Basic example test', async ({ I }) => {
   await I.amOnPage('https://playwright.dev/')
